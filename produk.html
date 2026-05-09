@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- SEO & AEO & GEO Standar Terbaru -->
-    <title>Katalog Produk - Abadi Souvenir Premium</title>
-    <meta name="description" content="Jelajahi berbagai pilihan souvenir premium dari Abadi Souvenir. Tumbler custom, gift set eksklusif, mug, dan tote bag untuk pernikahan maupun acara kantor.">
-    <meta name="keywords" content="katalog souvenir, produk souvenir, tumbler custom, gift set kantor, souvenir premium, abadi souvenir">
-    <meta name="author" content="Abadi Souvenir">
+    <title>Katalog Produk - Souveniria Premium</title>
+    <meta name="description" content="Jelajahi berbagai pilihan souvenir premium dari Souveniria. Tumbler custom, gift set eksklusif, mug, dan tote bag untuk pernikahan maupun acara kantor.">
+    <meta name="keywords" content="katalog souvenir, produk souvenir, tumbler custom, gift set kantor, souvenir premium, souveniria">
+    <meta name="author" content="Souveniria">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="geo.region" content="ID-JK" />
     <meta name="geo.placename" content="Jakarta" />
     <link rel="canonical" href="https://www.domainanda.com/produk.html">
     
     <!-- OpenGraph Lengkap -->
-    <meta property="og:title" content="Katalog Produk - Abadi Souvenir Premium">
-    <meta property="og:description" content="Jelajahi berbagai pilihan souvenir premium dari Abadi Souvenir untuk momen spesial Anda.">
+    <meta property="og:title" content="Katalog Produk - Souveniria Premium">
+    <meta property="og:description" content="Jelajahi berbagai pilihan souvenir premium dari Souveniria untuk momen spesial Anda.">
     <meta property="og:image" content="https://www.domainanda.com/assets/img/og-image.webp">
     <meta property="og:url" content="https://www.domainanda.com/produk.html">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Abadi Souvenir">
+    <meta property="og:site_name" content="Souveniria">
     
     <!-- Optimasi PageSpeed: Preconnect CDN -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -37,12 +37,12 @@
     {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
-      "name": "Katalog Produk Abadi Souvenir",
+      "name": "Katalog Produk Souveniria",
       "description": "Koleksi lengkap souvenir premium untuk pernikahan, acara kantor, dan promosi bisnis.",
       "url": "https://www.domainanda.com/produk.html",
       "publisher": {
         "@type": "LocalBusiness",
-        "name": "Abadi Souvenir"
+        "name": "Souveniria"
       }
     }
     </script>
@@ -134,15 +134,41 @@
             right: 15px;
             z-index: 10;
         }
-    </style>
+
+        /* MODAL PRODUCT PREMIUM STYLE */
+        .modal-content { border-radius: 20px; border: none; overflow: hidden; box-shadow: 0 15px 30px rgba(0,0,0,0.15); }
+        .modal-header { background-color: var(--dark-blue); color: white; border-bottom: none; padding: 20px 30px; }
+        .modal-header .btn-close { filter: invert(1); opacity: 0.8; }
+        .modal-body { padding: 30px; }
+        .product-modal-img { border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); transition: 0.3s; width: 100%; height: auto; object-fit: cover; }
+        .product-modal-img:hover { transform: scale(1.02); }
+        .modal-product-title { color: var(--dark-blue); font-weight: 800; margin-bottom: 10px; }
+        .modal-product-price { font-size: 1.1rem; color: var(--primary-blue); font-weight: 700; margin-bottom: 20px; display: block; }
+        .spec-list { list-style: none; padding: 0; margin-top: 20px; }
+        .spec-list li { margin-bottom: 10px; display: flex; align-items: flex-start; gap: 10px; color: #555; font-size: 0.9rem; }
+        .spec-list i { color: var(--primary-blue); margin-top: 5px; width: 20px; text-align: center; }
+        .modal-footer { border-top: none; padding: 20px 30px; background-color: #f9f9f9; }
+        .btn-wa-modal { background-color: var(--wa-green); color: white; font-weight: 600; border-radius: 50px; padding: 12px 30px; transition: 0.3s; border: none; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
+        .btn-wa-modal:hover { background-color: #1ebe57; color: white; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
+
+    
+        /* NAVBAR LOGO STYLE */
+        .navbar-logo {
+            object-fit: contain;
+            height: 95px; margin: -30px 15px -30px 0; position: relative; z-index: 10;
+            
+            
+        }
+</style>
 </head>
 <body>
 
     <!-- NAVBAR (Menu 'Produk' diubah menjadi active) -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top shadow py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4 text-white" href="index.html" aria-label="Beranda Abadi Souvenir">
-                ABADI SOUVENIR
+            <a class="navbar-brand fw-bold fs-4 text-white" href="index.html" aria-label="Beranda Souveniria">
+                
+                SOUVENIRIA
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -182,7 +208,7 @@
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title fw-bold text-dark">Tumbler Custom</h5>
                             <p class="card-text text-secondary small flex-grow-1">Bahan stainless steel, tahan panas/dingin. Cocok untuk souvenir kantor.</p>
-                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Tumbler%20Custom" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                            <button type="button" class="btn btn-primary rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalTumbler">Detail Produk</button>
                         </div>
                     </div>
                 </div>
@@ -194,7 +220,7 @@
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title fw-bold text-dark">Exclusive Gift Set</h5>
                             <p class="card-text text-secondary small flex-grow-1">Paket elegan berisi pulpen eksklusif, notebook, dan flashdisk custom.</p>
-                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Exclusive%20Gift%20Set" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                            <button type="button" class="btn btn-primary rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalGiftSet">Detail Produk</button>
                         </div>
                     </div>
                 </div>
@@ -206,7 +232,7 @@
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title fw-bold text-dark">Tote Bag Kanvas</h5>
                             <p class="card-text text-secondary small flex-grow-1">Tas ramah lingkungan yang bisa dikustomisasi dengan sablon logo acara Anda.</p>
-                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Tote%20Bag%20Kanvas" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                            <button type="button" class="btn btn-primary rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalToteBag">Detail Produk</button>
                         </div>
                     </div>
                 </div>
@@ -217,7 +243,7 @@
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title fw-bold text-dark">Mug Keramik</h5>
                             <p class="card-text text-secondary small flex-grow-1">Mug dengan cetakan decal presisi. Pilihan klasik favorit souvenir pernikahan.</p>
-                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Mug%20Keramik" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                            <button type="button" class="btn btn-primary rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalMug">Detail Produk</button>
                         </div>
                     </div>
                 </div>
@@ -228,7 +254,7 @@
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title fw-bold text-dark">Notebook Custom</h5>
                             <p class="card-text text-secondary small flex-grow-1">Buku catatan elegan dengan cover kulit sintetis, bisa di-emboss logo.</p>
-                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Notebook%20Custom" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                            <button type="button" class="btn btn-primary rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalNotebook">Detail Produk</button>
                         </div>
                     </div>
                 </div>
@@ -240,7 +266,7 @@
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title fw-bold text-dark">Payung Lipat Sablon</h5>
                             <p class="card-text text-secondary small flex-grow-1">Payung kuat tahan lama. Media promosi brand yang sangat efektif.</p>
-                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Payung%20Lipat" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                            <button type="button" class="btn btn-primary rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalPayung">Detail Produk</button>
                         </div>
                     </div>
                 </div>
@@ -251,7 +277,7 @@
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title fw-bold text-dark">Blue Elegance Gift Box</h5>
                             <p class="card-text text-secondary small flex-grow-1">Hampers eksklusif bernuansa biru putih dengan isi premium yang elegan dan cocok untuk hadiah spesial maupun corporate gift.</p>
-                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Blue%20Elegance%20Gift%20Box" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                            <button type="button" class="btn btn-primary rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalBlueBox">Detail Produk</button>
                         </div>
                     </div>
                 </div>
@@ -263,15 +289,304 @@
                         <div class="card-body text-center d-flex flex-column">
                             <h5 class="card-title fw-bold text-dark">Jam Meja Kayu</h5>
                             <p class="card-text text-secondary small flex-grow-1">Elegan dan estetik, memberikan kesan mewah untuk tamu VVIP Anda.</p>
-                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Jam%20Meja%20Kayu" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                            <button type="button" class="btn btn-primary rounded-pill w-100 mt-2" data-bs-toggle="modal" data-bs-target="#modalJamKayu">Detail Produk</button>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- SECTION: CTA (Tidak Diubah, Persis Seperti Sebelumnya) -->
+    <!-- KUMPULAN MODAL DETAIL PRODUK -->
+    <!-- Modal Tumbler -->
+    <div class="modal fade" id="modalTumbler" tabindex="-1" aria-labelledby="modalTumblerLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalTumblerLabel">Detail Produk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="image/tumbler-stainles.webp" class="product-modal-img" alt="Tumbler Custom">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="modal-product-title">Tumbler Stainless Premium</h3>
+                    <span class="modal-product-price">Harga mulai dari: Rp 35.000,-</span>
+                    <p class="text-secondary">Tumbler eksklusif berbahan stainless steel anti karat yang mampu menahan suhu panas maupun dingin hingga 8-12 jam. Desain elegan dan minimalis, sangat cocok untuk kebutuhan souvenir kantor atau kado spesial.</p>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Material Stainless Steel SUS 304 Food Grade</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Kapasitas 500ml (Ukuran Ideal)</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Custom Grafir Laser / Print UV High Res</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Pilihan warna: Hitam, Putih, Biru, Silver</span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Tumbler%20Stainless%20Premium" target="_blank" class="btn-wa-modal">
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- Modal Exclusive Gift Set -->
+    <div class="modal fade" id="modalGiftSet" tabindex="-1" aria-labelledby="modalGiftSetLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalGiftSetLabel">Detail Produk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="image/giftexclusivebiru.webp" class="product-modal-img" alt="Exclusive Gift Set">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="modal-product-title">Exclusive Gift Set Premium</h3>
+                    <span class="modal-product-price">Harga mulai dari: Rp 150.000,-</span>
+                    <p class="text-secondary">Paket hampers eksklusif yang dirancang khusus untuk klien VIP dan event corporate bergengsi. Setiap item dikurasi dengan kualitas terbaik untuk memberikan kesan mewah dan profesional.</p>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Packaging Hardbox Premium dengan Ribbon</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Isi: Tumbler, Notebook Kulit, & Pen Eksklusif</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Custom Emboss Logo pada Notebook & Grafir Laser</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Tersedia kartu ucapan custom (Greeting Card)</span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Exclusive%20Gift%20Set%20Premium" target="_blank" class="btn-wa-modal">
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- Modal Tote Bag -->
+    <div class="modal fade" id="modalToteBag" tabindex="-1" aria-labelledby="modalToteBagLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalToteBagLabel">Detail Produk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="image/totebagbiru.webp" class="product-modal-img" alt="Tote Bag Kanvas">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="modal-product-title">Tote Bag Kanvas Estetik</h3>
+                    <span class="modal-product-price">Harga mulai dari: Rp 20.000,-</span>
+                    <p class="text-secondary">Souvenir ramah lingkungan berbahan kanvas premium tebal dengan jahitan yang sangat kuat. Pilihan tepat untuk merchandise seminar atau souvenir pernikahan yang berguna bagi tamu.</p>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Material: Kanvas Premium Grade A</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Ukuran: 30 x 40 cm (Landscape/Portrait)</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Custom Sablon Full Color / DTF High Quality</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Tersedia pilihan pakai resleting / velcro</span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Tote%20Bag%20Kanvas%20Estetik" target="_blank" class="btn-wa-modal">
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- Modal Mug -->
+    <div class="modal fade" id="modalMug" tabindex="-1" aria-labelledby="modalMugLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalMugLabel">Detail Produk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="image/tumblerstainlesbiru.webp" class="product-modal-img" alt="Mug Keramik">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="modal-product-title">Mug Keramik Premium</h3>
+                    <span class="modal-product-price">Harga mulai dari: Rp 15.000,-</span>
+                    <p class="text-secondary">Mug keramik klasik dengan coating premium untuk hasil cetakan gambar yang tajam dan tahan lama. Produk bersertifikat SNI, aman digunakan untuk minuman panas maupun dingin.</p>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Material: Keramik Porcelain Berkualitas (SNI)</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Hasil Cetak: Decal Oven / Sublim High Res</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Tahan cuci berulang kali & microwave safe</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Packaging: Dus Putih / Box Custom Jendela</span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Mug%20Keramik%20Premium" target="_blank" class="btn-wa-modal">
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- Modal Notebook Custom -->
+    <div class="modal fade" id="modalNotebook" tabindex="-1" aria-labelledby="modalNotebookLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalNotebookLabel">Detail Produk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="image/notedbookbiru.webp" class="product-modal-img" alt="Notebook Custom">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="modal-product-title">Notebook Custom Premium</h3>
+                    <span class="modal-product-price">Harga mulai dari: Rp 45.000,-</span>
+                    <p class="text-secondary">Buku catatan eksklusif dengan cover kulit sintetis berkualitas tinggi. Sangat cocok untuk keperluan meeting kantor, seminar, atau sebagai merchandise brand Anda.</p>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Cover: Soft/Hard Cover Kulit Sintetis (Thermosensitive)</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Isi: 80 Lembar Kertas Bookpaper Cream 72gsm</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Custom: Emboss / Deboss Logo & Foil Gold/Silver</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Tersedia tali pembatas & kantong kertas di belakang</span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Notebook%20Custom%20Premium" target="_blank" class="btn-wa-modal">
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- Modal Payung Lipat -->
+    <div class="modal fade" id="modalPayung" tabindex="-1" aria-labelledby="modalPayungLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalPayungLabel">Detail Produk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="image/payungsouvenir.webp" class="product-modal-img" alt="Payung Lipat">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="modal-product-title">Payung Lipat Sablon Custom</h3>
+                    <span class="modal-product-price">Harga mulai dari: Rp 55.000,-</span>
+                    <p class="text-secondary">Payung lipat praktis dengan rangka yang kokoh dan kain anti UV (Silver Coating). Media promosi yang sangat efektif karena memiliki area cetak logo yang luas dan sering digunakan.</p>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Rangka: Besi Hitam Kokoh (Anti Angin)</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Kain: Polyester dengan Lapisan Silver Anti-UV</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Custom: Sablon 1-4 Sisi (Full Color)</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Handle: Nyaman digenggam & dilengkapi tali</span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Payung%20Lipat%20Sablon%20Custom" target="_blank" class="btn-wa-modal">
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- Modal Blue Elegance Box -->
+    <div class="modal fade" id="modalBlueBox" tabindex="-1" aria-labelledby="modalBlueBoxLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalBlueBoxLabel">Detail Produk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="image/giftcorporatebiru.webp" class="product-modal-img" alt="Blue Elegance Box">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="modal-product-title">Blue Elegance Gift Box</h3>
+                    <span class="modal-product-price">Harga mulai dari: Rp 125.000,-</span>
+                    <p class="text-secondary">Hampers eksklusif dengan tema warna biru-putih yang menenangkan dan elegan. Sangat cocok diberikan sebagai kado ulang tahun, anniversary, atau souvenir perusahaan untuk klien spesial.</p>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Box: Hardbox Mewah dengan Satin Inner</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Isi: Botol Minum, Towel Hand, & Reed Diffuser</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Custom: Greeting Card & Sticker Seal Custom</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Kualitas barang premium yang fungsional</span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Blue%20Elegance%20Gift%20Box" target="_blank" class="btn-wa-modal">
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+       </div>
+    </div>
+
+    <!-- Modal Jam Meja Kayu -->
+    <div class="modal fade" id="modalJamKayu" tabindex="-1" aria-labelledby="modalJamKayuLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold" id="modalJamKayuLabel">Detail Produk</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row align-items-center">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="image/jammeja.webp" class="product-modal-img" alt="Jam Meja Kayu">
+                </div>
+                <div class="col-md-7">
+                    <h3 class="modal-product-title">Jam Meja Kayu Estetik</h3>
+                    <span class="modal-product-price">Harga mulai dari: Rp 75.000,-</span>
+                    <p class="text-secondary">Jam meja artistik yang terbuat dari kayu pinus asli dengan serat alami yang indah. Produk ini tidak hanya berfungsi sebagai penunjuk waktu, tapi juga sebagai dekorasi meja yang mewah.</p>
+                    <ul class="spec-list">
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Material: Kayu Pinus / Jati Belanda Grade A</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Mesin: Quartz Silent Movement (Tanpa Suara)</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Custom: Grafir Laser Nama / Logo Permanen</span></li>
+                        <li><i class="fa-solid fa-check-circle"></i> <span>Finishing: Natural Clear Coat (Halus & Glossy)</span></li>
+                    </ul>
+                </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Jam%20Meja%20Kayu%20Estetik" target="_blank" class="btn-wa-modal">
+                <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
+            </a>
+          </div>
+        </div>
+       </div>
+    </div>
+
     <section class="py-5" style="background-color: var(--primary-blue);">
         <div class="container text-center">
             <h2 class="fw-bold text-white mb-3">Siap Mewujudkan Souvenir Impian Anda?</h2>
@@ -287,7 +602,7 @@
         <div class="container pt-3">
             <div class="row justify-content-between">
                 <div class="col-lg-4 col-md-6 mb-4 pe-lg-5">
-                    <h5 class="fw-bold mb-4 text-white">ABADI SOUVENIR</h5>
+                    <h5 class="fw-bold mb-4 text-white">SOUVENIRIA</h5>
                     <p class="text-white" style="opacity: 0.8; line-height: 1.8;">
                         Penyedia layanan souvenir premium terpercaya untuk pernikahan, seminar, dan kebutuhan promosi perusahaan Anda. Kualitas adalah prioritas utama kami.
                     </p>
@@ -324,7 +639,7 @@
             </div>
             <hr class="border-secondary my-1">
             <div class="text-center text-white pb-6" style="opacity: 0.6;">
-                <small>&copy; 2026 Abadi Souvenir. All Rights Reserved.</small>
+                <small>&copy; 2026 Souveniria. All Rights Reserved.</small>
             </div>
         </div>
     </footer>
@@ -359,3 +674,10 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+

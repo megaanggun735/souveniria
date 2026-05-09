@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <!-- SEO & AEO & GEO Standar Terbaru -->
     <title>Keunggulan Mug Keramik sebagai Souvenir Promosi dan Pernikahan</title>
     <meta name="description" content="Mug keramik selalu menjadi pilihan abadi sepanjang masa. Ketahui berbagai keunggulan dan keuntungan menggunakan mug keramik sebagai souvenir acara Anda.">
-    <meta name="keywords" content="keunggulan mug keramik, souvenir mug, mug custom, souvenir pernikahan mug, mug promosi perusahaan, abadi souvenir">
-    <meta name="author" content="Tim Redaksi Abadi Souvenir">
+    <meta name="keywords" content="keunggulan mug keramik, souvenir mug, mug custom, souvenir pernikahan mug, mug promosi perusahaan, Souveniria">
+    <meta name="author" content="Tim Redaksi Souveniria">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="geo.region" content="ID-JK" />
     <meta name="geo.placename" content="Jakarta" />
@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://www.domainanda.com/assets/img/blog-mug-1.webp">
     <meta property="og:url" content="https://www.domainanda.com/keunggulan-mug-keramik.html">
     <meta property="og:type" content="article">
-    <meta property="og:site_name" content="Abadi Souvenir">
+    <meta property="og:site_name" content="Souveniria">
     
     <!-- Optimasi PageSpeed: Preconnect CDN -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -45,7 +45,7 @@
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Abadi Souvenir",
+        "name": "Souveniria",
         "logo": {
           "@type": "ImageObject",
           "url": "https://www.domainanda.com/assets/img/favicon.webp"
@@ -93,8 +93,22 @@
         }
         .author-box { display: flex; align-items: center; gap: 20px; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin-top: 40px; margin-bottom: 30px; }
         /* Perbaikan Foto Profil agar Bulat Sempurna */
-        .author-box img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+        .author-box img { width: 80px; height: 95px; margin: -30px 15px -30px 0; position: relative; z-index: 10; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
         
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            cursor: pointer;
+        }
         .float-btn:hover { transform: translateY(-5px); color: white; }
         #btn-top { background-color: var(--dark-blue); opacity: 0; visibility: hidden; }
         #btn-top.show { opacity: 1; visibility: visible; }
@@ -108,9 +122,9 @@
         figcaption { font-size: 0.85rem; color: #6c757d; text-align: center; margin-top: 10px; font-style: italic; }
         
         .author-box { display: flex; align-items: center; gap: 20px; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin-top: 40px; margin-bottom: 30px; }
-        .author-box img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
+        .author-box img { width: 80px; height: 95px; margin: -30px 15px -30px 0; position: relative; z-index: 10; border-radius: 50%; object-fit: cover; }
         
-        .share-links a { width: 45px; height: 45px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: white; text-decoration: none; transition: 0.3s; margin-right: 10px; font-size: 20px; }
+        .share-links a { width: 45px; height: 95px; margin: -30px 15px -30px 0; position: relative; z-index: 10; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: white; text-decoration: none; transition: 0.3s; margin-right: 10px; font-size: 20px; }
         .share-links a:hover { transform: translateY(-3px); opacity: 0.9; }
         .btn-facebook { background-color: #1877F2; }
         .btn-twitter { background-color: #000000; }
@@ -118,14 +132,22 @@
 
         .card { border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: 0.3s; }
         .card:hover { box-shadow: 0 8px 16px rgba(0,0,0,0.1); transform: translateY(-5px); }
-    </style>
+    
+        /* NAVBAR LOGO STYLE */
+        .navbar-logo {
+            object-fit: contain;
+            height: 95px; margin: -30px 15px -30px 0; position: relative; z-index: 10;
+            
+            
+        }
+</style>
 </head>
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top shadow py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4 text-white" href="index.html">ABADI SOUVENIR</a>
+            <a class="navbar-brand fw-bold fs-4 text-white" href="index.html" aria-label="Beranda Souveniria">SOUVENIRIA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -236,7 +258,7 @@
                                 </button>
                             </h2>
                             <div id="colFaq2" class="accordion-collapse collapse" data-bs-parent="#accordionBlogFAQ">
-                                <div class="accordion-body">Kami di Abadi Souvenir menggunakan *bubble wrap* berlapis dan pengemasan menggunakan *corrugated box* per *pieces*, lalu dimasukkan ke dalam kardus master (*master box*) agar aman dari benturan saat ekspedisi.</div>
+                                <div class="accordion-body">Kami di Souveniria menggunakan *bubble wrap* berlapis dan pengemasan menggunakan *corrugated box* per *pieces*, lalu dimasukkan ke dalam kardus master (*master box*) agar aman dari benturan saat ekspedisi.</div>
                             </div>
                         </div>
                         <!-- FAQ 3: Barang Rusak -->
@@ -257,7 +279,7 @@
                         <img src="image/profil2.webp" alt="Profil Penulis Sari Dewi" loading="lazy">
                         <div>
                             <h5 class="fw-bold mb-1 text-dark">Sari Dewi</h5>
-                            <p class="text-secondary small mb-0">Spesialis Corporate Merchandise di Abadi Souvenir. Berbekal pengalaman melayani ribuan klien perusahaan, ia kerap membagikan wawasan mengenai efektivitas promosi melalui barang fungsional.</p>
+                            <p class="text-secondary small mb-0">Spesialis Corporate Merchandise di Souveniria. Berbekal pengalaman melayani ribuan klien perusahaan, ia kerap membagikan wawasan mengenai efektivitas promosi melalui barang fungsional.</p>
                         </div>
                     </div>
 
@@ -332,7 +354,7 @@
         <div class="container pt-3">
             <div class="row justify-content-between">
                 <div class="col-lg-4 col-md-6 mb-4 pe-lg-5">
-                    <h5 class="fw-bold mb-4 text-white">ABADI SOUVENIR</h5>
+                    <h5 class="fw-bold mb-4 text-white">Souveniria</h5>
                     <p class="text-white" style="opacity: 0.8; line-height: 1.8;">
                         Penyedia layanan souvenir premium terpercaya untuk pernikahan, seminar, dan kebutuhan promosi perusahaan Anda. Kualitas adalah prioritas utama kami.
                     </p>
@@ -369,7 +391,7 @@
             </div>
             <hr class="border-secondary my-1">
             <div class="text-center text-white pb-6" style="opacity: 0.6;">
-                <small>&copy; 2026 Abadi Souvenir. All Rights Reserved.</small>
+                <small>&copy; 2026 Souveniria. All Rights Reserved.</small>
             </div>
         </div>
     </footer>
@@ -404,3 +426,10 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+

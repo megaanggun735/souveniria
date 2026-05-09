@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <!-- SEO & AEO & GEO Standar Terbaru -->
     <title>Cara Menekan Budget Souvenir Pernikahan Tanpa Mengorbankan Kualitas</title>
     <meta name="description" content="Ingin souvenir berkelas tapi dana mepet? Ini strategi cerdas memangkas biaya dan menekan budget souvenir tanpa mengorbankan kualitas untuk acara Anda.">
-    <meta name="keywords" content="budget souvenir, souvenir hemat, souvenir murah berkualitas, tips hemat pernikahan, abadi souvenir">
-    <meta name="author" content="Tim Redaksi Abadi Souvenir">
+    <meta name="keywords" content="budget souvenir, souvenir hemat, souvenir murah berkualitas, tips hemat pernikahan, Souveniria">
+    <meta name="author" content="Tim Redaksi Souveniria">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="geo.region" content="ID-JK" />
     <meta name="geo.placename" content="Jakarta" />
@@ -20,7 +20,7 @@
     <meta property="og:image" content="https://www.domainanda.com/assets/img/blog-budget-1.webp">
     <meta property="og:url" content="https://www.domainanda.com/menekan-budget-souvenir.html">
     <meta property="og:type" content="article">
-    <meta property="og:site_name" content="Abadi Souvenir">
+    <meta property="og:site_name" content="Souveniria">
     
     <!-- Optimasi PageSpeed: Preconnect CDN -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
@@ -45,7 +45,7 @@
       },
       "publisher": {
         "@type": "Organization",
-        "name": "Abadi Souvenir",
+        "name": "Souveniria",
         "logo": {
           "@type": "ImageObject",
           "url": "https://www.domainanda.com/assets/img/favicon.webp"
@@ -93,8 +93,22 @@
         }
         .author-box { display: flex; align-items: center; gap: 20px; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin-top: 40px; margin-bottom: 30px; }
         /* Perbaikan Foto Profil agar Bulat Sempurna */
-        .author-box img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+        .author-box img { width: 80px; height: 95px; margin: -30px 15px -30px 0; position: relative; z-index: 10; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
         
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            cursor: pointer;
+        }
         .float-btn:hover { transform: translateY(-5px); color: white; }
         #btn-top { background-color: var(--dark-blue); opacity: 0; visibility: hidden; }
         #btn-top.show { opacity: 1; visibility: visible; }
@@ -108,9 +122,9 @@
         figcaption { font-size: 0.85rem; color: #6c757d; text-align: center; margin-top: 10px; font-style: italic; }
         
         .author-box { display: flex; align-items: center; gap: 20px; background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); margin-top: 40px; margin-bottom: 30px; }
-        .author-box img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
+        .author-box img { width: 80px; height: 95px; margin: -30px 15px -30px 0; position: relative; z-index: 10; border-radius: 50%; object-fit: cover; }
         
-        .share-links a { width: 45px; height: 45px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: white; text-decoration: none; transition: 0.3s; margin-right: 10px; font-size: 20px; }
+        .share-links a { width: 45px; height: 95px; margin: -30px 15px -30px 0; position: relative; z-index: 10; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; color: white; text-decoration: none; transition: 0.3s; margin-right: 10px; font-size: 20px; }
         .share-links a:hover { transform: translateY(-3px); opacity: 0.9; }
         .btn-facebook { background-color: #1877F2; }
         .btn-twitter { background-color: #000000; }
@@ -118,14 +132,22 @@
 
         .card { border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: 0.3s; }
         .card:hover { box-shadow: 0 8px 16px rgba(0,0,0,0.1); transform: translateY(-5px); }
-    </style>
+    
+        /* NAVBAR LOGO STYLE */
+        .navbar-logo {
+            object-fit: contain;
+            height: 95px; margin: -30px 15px -30px 0; position: relative; z-index: 10;
+            
+            
+        }
+</style>
 </head>
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top shadow py-3">
         <div class="container">
-            <a class="navbar-brand fw-bold fs-4 text-white" href="index.html">ABADI SOUVENIR</a>
+            <a class="navbar-brand fw-bold fs-4 text-white" href="index.html" aria-label="Beranda Souveniria">SOUVENIRIA</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -207,7 +229,7 @@
                     </figure>
 
                     <h3 id="tips3">3. Manfaatkan Promo Bundling atau Grosir</h3>
-                    <p>Hukum ekonomi dasar: semakin banyak yang Anda pesan, semakin murah harga per *pieces*-nya. Cobalah negosiasi dengan pihak vendor jika Anda memesan dalam partai besar. Di Abadi Souvenir, kami sering memberikan potongan harga khusus atau bonus kartu ucapan gratis untuk pemesanan dalam jumlah grosir di atas 500 pcs.</p>
+                    <p>Hukum ekonomi dasar: semakin banyak yang Anda pesan, semakin murah harga per *pieces*-nya. Cobalah negosiasi dengan pihak vendor jika Anda memesan dalam partai besar. Di Souveniria, kami sering memberikan potongan harga khusus atau bonus kartu ucapan gratis untuk pemesanan dalam jumlah grosir di atas 500 pcs.</p>
 
                     <h3 id="tips4">4. Pilih Barang Fungsional yang Sederhana</h3>
                     <p>Jangan terjebak pada barang yang bentuknya rumit atau mewah tapi minim manfaat. Lebih baik membagikan mug keramik standar, *tote bag* kanvas, atau sedotan *stainless* yang terbukti berguna setiap hari. Barang fungsional yang sederhana selalu menang melawan barang pajangan yang mahal tapi tak berguna.</p>
@@ -247,7 +269,7 @@
                                 </button>
                             </h2>
                             <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionGeneralFAQ">
-                                <div class="accordion-body">Tidak ada. Di Abadi Souvenir, layanan konsultasi desain dan pembuatan mockup hingga fix adalah <strong>gratis</strong> bagi pelanggan yang sudah melakukan pembayaran DP.</div>
+                                <div class="accordion-body">Tidak ada. Di Souveniria, layanan konsultasi desain dan pembuatan mockup hingga fix adalah <strong>gratis</strong> bagi pelanggan yang sudah melakukan pembayaran DP.</div>
                             </div>
                         </div>
                     </div>
@@ -332,7 +354,7 @@
         <div class="container pt-3">
             <div class="row justify-content-between">
                 <div class="col-lg-4 col-md-6 mb-4 pe-lg-5">
-                    <h5 class="fw-bold mb-4 text-white">ABADI SOUVENIR</h5>
+                    <h5 class="fw-bold mb-4 text-white">Souveniria</h5>
                     <p class="text-white" style="opacity: 0.8; line-height: 1.8;">
                         Penyedia layanan souvenir premium terpercaya untuk pernikahan, seminar, dan kebutuhan promosi perusahaan Anda. Kualitas adalah prioritas utama kami.
                     </p>
@@ -369,7 +391,7 @@
             </div>
             <hr class="border-secondary my-1">
             <div class="text-center text-white pb-6" style="opacity: 0.6;">
-                <small>&copy; 2026 Abadi Souvenir. All Rights Reserved.</small>
+                <small>&copy; 2026 Souveniria. All Rights Reserved.</small>
             </div>
         </div>
     </footer>
@@ -404,3 +426,10 @@
     </script>
 </body>
 </html>
+
+
+
+
+
+
+
