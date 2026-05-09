@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO & AEO & GEO Standar Terbaru -->
+    <title>Katalog Produk - Abadi Souvenir Premium</title>
+    <meta name="description" content="Jelajahi berbagai pilihan souvenir premium dari Abadi Souvenir. Tumbler custom, gift set eksklusif, mug, dan tote bag untuk pernikahan maupun acara kantor.">
+    <meta name="keywords" content="katalog souvenir, produk souvenir, tumbler custom, gift set kantor, souvenir premium, abadi souvenir">
+    <meta name="author" content="Abadi Souvenir">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+    <meta name="geo.region" content="ID-JK" />
+    <meta name="geo.placename" content="Jakarta" />
+    <link rel="canonical" href="https://www.domainanda.com/produk.html">
+    
+    <!-- OpenGraph Lengkap -->
+    <meta property="og:title" content="Katalog Produk - Abadi Souvenir Premium">
+    <meta property="og:description" content="Jelajahi berbagai pilihan souvenir premium dari Abadi Souvenir untuk momen spesial Anda.">
+    <meta property="og:image" content="https://www.domainanda.com/assets/img/og-image.webp">
+    <meta property="og:url" content="https://www.domainanda.com/produk.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Abadi Souvenir">
+    
+    <!-- Optimasi PageSpeed: Preconnect CDN -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="preload" as="image" href="assets/img/produk-banner.webp">
+    
+    <!-- Favicon Maksimal (Multi-size & Apple Touch) -->
+    <link rel="icon" type="image/webp" sizes="32x32" href="assets/img/favicon.webp">
+    <link rel="icon" type="image/webp" sizes="192x192" href="assets/img/favicon.webp">
+    <link rel="apple-touch-icon" href="assets/img/favicon.webp">
+
+    <!-- Schema.org JSON-LD untuk AEO (AI Overview) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Katalog Produk Abadi Souvenir",
+      "description": "Koleksi lengkap souvenir premium untuk pernikahan, acara kantor, dan promosi bisnis.",
+      "url": "https://www.domainanda.com/produk.html",
+      "publisher": {
+        "@type": "LocalBusiness",
+        "name": "Abadi Souvenir"
+      }
+    }
+    </script>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+
+    <style>
+        /* Variabel Warna Menyesuaikan Desain Gambar */
+        :root {
+            --dark-blue: #042b47;
+            --primary-blue: #0d6efd;
+            --light-bg: #f8f9fa;
+            --wa-green: #25d366;
+        }
+
+        body {
+            overflow-x: hidden;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--light-bg);
+        }
+
+        /* Navbar Kustom */
+        .bg-dark-blue { background-color: var(--dark-blue); }
+        .navbar-dark .navbar-nav .nav-link { color: rgba(255, 255, 255, 0.85); font-weight: 500; }
+        .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link.active { color: #ffffff; }
+        
+        .btn-wa-nav {
+            background-color: var(--wa-green);
+            color: white;
+            font-weight: 600;
+            transition: 0.3s;
+            border: none;
+        }
+        .btn-wa-nav:hover { background-color: #1ebe57; color: white; transform: translateY(-2px); }
+
+        /* Setup Banner Halaman Dalam */
+        .page-header {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(4, 43, 71, 0.7), rgba(4, 43, 71, 0.7)), url('image/PremiumGift.webp') center/cover no-repeat;
+            text-align: center;
+            color: white;
+            padding: 40px 0;
+        }
+
+        /* Floating Buttons */
+        .floating-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .float-btn:hover { transform: translateY(-5px); color: white; }
+        #btn-top { background-color: var(--dark-blue); opacity: 0; visibility: hidden; }
+        #btn-top.show { opacity: 1; visibility: visible; }
+        #btn-wa { background-color: var(--wa-green); }
+
+        /* Kartu dengan shadow halus */
+        .card { border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.05); transition: 0.3s; }
+        .card:hover { box-shadow: 0 8px 16px rgba(0,0,0,0.1); transform: translateY(-5px); }
+        
+        /* Badges pada Kartu Produk */
+        .product-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR (Menu 'Produk' diubah menjadi active) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top shadow py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 text-white" href="index.html" aria-label="Beranda Abadi Souvenir">
+                ABADI SOUVENIR
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item me-2"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item me-2"><a class="nav-link" href="about.html">Tentang Kami</a></li>
+                    <li class="nav-item me-2"><a class="nav-link active" href="produk.html">Produk</a></li>
+                    <li class="nav-item me-2"><a class="nav-link" href="ulasan.html">Ulasan</a></li>
+                    <li class="nav-item me-2"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO / BANNER KATALOG PRODUK -->
+    <header class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-3">Katalog Produk</h1>
+            <p class="lead mb-0 fs-4" style="opacity: 0.9;">Pilihan Souvenir Eksklusif untuk Setiap Momen Anda</p>
+        </div>
+    </header>
+
+    <!-- SECTION: DAFTAR PRODUK KAMI -->
+    <section class="py-4 bg-white">
+        <div class="container py-3">
+
+            <div class="row g-4">
+                <!-- Produk 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 position-relative bg-white shadow-sm">
+                        <span class="badge bg-danger product-badge">Terlaris</span>
+                        <img src="image/tumbler-stainles.webp" class="card-img-top" alt="Tumbler Custom" loading="lazy" width="300" height="300">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold text-dark">Tumbler Custom</h5>
+                            <p class="card-text text-secondary small flex-grow-1">Bahan stainless steel, tahan panas/dingin. Cocok untuk souvenir kantor.</p>
+                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Tumbler%20Custom" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 position-relative bg-white shadow-sm">
+                        <span class="badge bg-warning text-dark product-badge">Premium</span>
+                        <img src="image/giftexclusivebiru.webp" class="card-img-top" alt="Gift Set Exclusive" loading="lazy" width="300" height="300">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold text-dark">Exclusive Gift Set</h5>
+                            <p class="card-text text-secondary small flex-grow-1">Paket elegan berisi pulpen eksklusif, notebook, dan flashdisk custom.</p>
+                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Exclusive%20Gift%20Set" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 position-relative bg-white shadow-sm">
+                        <span class="badge bg-success product-badge">Eco-Friendly</span>
+                        <img src="image/totebagbiru.webp" class="card-img-top" alt="Tote Bag Kanvas" loading="lazy" width="300" height="300">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold text-dark">Tote Bag Kanvas</h5>
+                            <p class="card-text text-secondary small flex-grow-1">Tas ramah lingkungan yang bisa dikustomisasi dengan sablon logo acara Anda.</p>
+                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Tote%20Bag%20Kanvas" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 position-relative bg-white shadow-sm">
+                        <img src="image/tumblerstainlesbiru.webp" class="card-img-top" alt="Mug Keramik" loading="lazy" width="300" height="300">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold text-dark">Mug Keramik</h5>
+                            <p class="card-text text-secondary small flex-grow-1">Mug dengan cetakan decal presisi. Pilihan klasik favorit souvenir pernikahan.</p>
+                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Mug%20Keramik" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 5 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 position-relative bg-white shadow-sm">
+                        <img src="image/notedbookbiru.webp" class="card-img-top" alt="Notebook Custom" loading="lazy" width="300" height="300">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold text-dark">Notebook Custom</h5>
+                            <p class="card-text text-secondary small flex-grow-1">Buku catatan elegan dengan cover kulit sintetis, bisa di-emboss logo.</p>
+                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Notebook%20Custom" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 6 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 position-relative bg-white shadow-sm">
+                        <span class="badge bg-danger product-badge">Promo</span>
+                        <img src="image/payungsouvenir.webp" class="card-img-top" alt="Payung Promosi" loading="lazy" width="300" height="300">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold text-dark">Payung Lipat Sablon</h5>
+                            <p class="card-text text-secondary small flex-grow-1">Payung kuat tahan lama. Media promosi brand yang sangat efektif.</p>
+                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Payung%20Lipat" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 7 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 position-relative bg-white shadow-sm">
+                        <img src="image/giftcorporatebiru.webp" class="card-img-top" alt="Flashdisk Kartu" loading="lazy" width="300" height="300">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold text-dark">Blue Elegance Gift Box</h5>
+                            <p class="card-text text-secondary small flex-grow-1">Hampers eksklusif bernuansa biru putih dengan isi premium yang elegan dan cocok untuk hadiah spesial maupun corporate gift.</p>
+                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Blue%20Elegance%20Gift%20Box" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Produk 8 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 position-relative bg-white shadow-sm">
+                        <span class="badge bg-warning text-dark product-badge">Eksklusif</span>
+                        <img src="image/jammeja.webp" class="card-img-top" alt="Jam Meja Kayu" loading="lazy" width="300" height="300">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title fw-bold text-dark">Jam Meja Kayu</h5>
+                            <p class="card-text text-secondary small flex-grow-1">Elegan dan estetik, memberikan kesan mewah untuk tamu VVIP Anda.</p>
+                            <a href="https://wa.me/6281234567890?text=Halo%20saya%20tertarik%20pesan%20Jam%20Meja%20Kayu" target="_blank" class="btn btn-outline-primary rounded-pill w-100 mt-2">Pesan Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CTA (Tidak Diubah, Persis Seperti Sebelumnya) -->
+    <section class="py-5" style="background-color: var(--primary-blue);">
+        <div class="container text-center">
+            <h2 class="fw-bold text-white mb-3">Siap Mewujudkan Souvenir Impian Anda?</h2>
+            <p class="text-white mb-4 fs-5" style="opacity: 0.9;">Diskusikan kebutuhan, desain, dan budget Anda kepada tim kami sekarang juga.</p>
+            <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-light text-primary btn-lg px-5 rounded-pill shadow fw-bold" aria-label="Chat Admin Sekarang di WhatsApp">
+                <i class="fa-brands fa-whatsapp me-2"></i> Konsultasi Gratis via WA
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER (Tidak Diubah, Persis Seperti Sebelumnya) -->
+    <footer class="bg-dark-blue py-3">
+        <div class="container pt-3">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-md-6 mb-4 pe-lg-5">
+                    <h5 class="fw-bold mb-4 text-white">ABADI SOUVENIR</h5>
+                    <p class="text-white" style="opacity: 0.8; line-height: 1.8;">
+                        Penyedia layanan souvenir premium terpercaya untuk pernikahan, seminar, dan kebutuhan promosi perusahaan Anda. Kualitas adalah prioritas utama kami.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Navigasi</h5>
+                    <ul class="list-unstyled" style="line-height: 2;">
+                        <li><a href="index.html" class="text-decoration-none text-white" style="opacity: 0.8;">Home</a></li>
+                        <li><a href="about.html" class="text-decoration-none text-white" style="opacity: 0.8;">Tentang Kami</a></li>
+                        <li><a href="produk.html" class="text-decoration-none text-white" style="opacity: 0.8;">Produk</a></li>
+                        <li><a href="ulasan.html" class="text-decoration-none text-white" style="opacity: 0.8;">Ulasan</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Informasi</h5>
+                    <ul class="list-unstyled" style="line-height: 2;">
+                        <li><a href="blog.html" class="text-decoration-none text-white" style="opacity: 0.8;">Blog</a></li>
+                        <li><a href="faq.html" class="text-decoration-none text-white" style="opacity: 0.8;">FAQ</a></li>
+                        <li><a href="#" class="text-decoration-none text-white" style="opacity: 0.8;">Syarat Ketentuan</a></li>
+                        <li><a href="#" class="text-decoration-none text-white" style="opacity: 0.8;">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="fw-bold mb-4 text-white">Hubungi Kami</h5>
+                    <p class="text-white mb-2" style="opacity: 0.8;"><i class="fa-solid fa-location-dot me-2"></i> Jl. Contoh Industri No. 123, Jakarta</p>
+                    <p class="text-white mb-2" style="opacity: 0.8;"><i class="fa-solid fa-phone me-2"></i> +62 812 3456 7890</p>
+                    <p class="text-white mb-4" style="opacity: 0.8;"><i class="fa-solid fa-envelope me-2"></i> cs@abadisouvenir.com</p>
+                    <div>
+                        <a href="#" class="text-white me-3 fs-5" style="opacity: 0.8; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" aria-label="Profil Instagram Kami"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3 fs-5" style="opacity: 0.8; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" aria-label="Halaman Facebook Kami"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-5" style="opacity: 0.8; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" aria-label="Akun TikTok Kami"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-1">
+            <div class="text-center text-white pb-6" style="opacity: 0.6;">
+                <small>&copy; 2026 Abadi Souvenir. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING BUTTONS (Tidak Diubah, Persis Seperti Sebelumnya) -->
+    <div class="floating-container">
+        <div id="btn-top" class="float-btn" onclick="scrollToTop()" role="button" tabindex="0" title="Ke Atas" aria-label="Scroll kembali ke atas">
+            <i class="fa-solid fa-chevron-up"></i>
+        </div>
+        <a href="https://wa.me/6281234567890" target="_blank" id="btn-wa" class="float-btn" title="Chat WhatsApp" aria-label="Buka Chat WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script Interaksi -->
+    <script>
+        const btnTop = document.getElementById("btn-top");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnTop.classList.add("show");
+            } else {
+                btnTop.classList.remove("show");
+            }
+        };
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
