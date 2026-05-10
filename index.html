@@ -17,7 +17,7 @@
     <!-- OpenGraph Lengkap -->
     <meta property="og:title" content="Souveniria - Souvenir Premium">
     <meta property="og:description" content="Pilihan terbaik untuk pernikahan, seminar, dan acara kantor.">
-    <meta property="og:image" content="https://www.domainanda.com/assets/img/og-image.webp">
+    <meta property="og:image" content="image/logo.webp">
     <meta property="og:url" content="https://www.domainanda.com/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Souveniria">
@@ -25,12 +25,12 @@
     <!-- Optimasi PageSpeed: Preconnect CDN & Preload Hero Background -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preload" as="image" href="assets/img/hero-bg.webp">
+    <link rel="preload" as="image" href="image/souvenir-box.webp">
     
-    <!-- Favicon Maksimal (Multi-size & Apple Touch) -->
-    <link rel="icon" type="image/webp" sizes="32x32" href="assets/img/favicon.webp">
-    <link rel="icon" type="image/webp" sizes="192x192" href="assets/img/favicon.webp">
-    <link rel="apple-touch-icon" href="assets/img/favicon.webp">
+    <!-- Favicon (Multi-size & Apple Touch) -->
+    <link rel="icon" type="image/webp" sizes="32x32" href="image/logo.webp">
+    <link rel="icon" type="image/webp" sizes="192x192" href="image/logo.webp">
+    <link rel="apple-touch-icon" href="image/logo.webp">
 
     <!-- Schema.org JSON-LD untuk AEO (AI Overview) & SEO Tingkat Lanjut -->
     <script type="application/ld+json">
@@ -38,7 +38,7 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "Souveniria",
-      "image": "https://www.domainanda.com/assets/img/og-image.webp",
+      "image": "image/logo.webp",
       "url": "https://www.domainanda.com/",
       "telephone": "+6281234567890",
       "address": {
@@ -65,12 +65,18 @@
             --primary-blue: #0d6efd;
             --light-bg: #f8f9fa;
             --wa-green: #25d366;
+            --text-secondary: #555555;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
             overflow-x: hidden;
             width: 100%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
         }
 
         /* Navbar Kustom */
@@ -117,12 +123,14 @@
             justify-content: center;
             font-size: 26px;
             color: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             text-decoration: none;
             cursor: pointer;
+            border: none;
+            padding: 0;
         }
-        .float-btn:hover { transform: translateY(-5px); color: white; }
+        .float-btn:hover { transform: translateY(-8px); color: white; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
         #btn-top { background-color: var(--dark-blue); opacity: 0; visibility: hidden; }
         #btn-top.show { opacity: 1; visibility: visible; }
         #btn-wa { background-color: var(--wa-green); }
@@ -158,7 +166,9 @@
         .spec-list i { color: var(--primary-blue); margin-top: 5px; width: 20px; text-align: center; }
         .modal-footer { border-top: none; padding: 20px 30px; background-color: #f9f9f9; }
         .btn-wa-modal { background-color: var(--wa-green); color: white; font-weight: 600; border-radius: 50px; padding: 12px 30px; transition: 0.3s; border: none; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; }
-        .btn-wa-modal:hover { background-color: #1ebe57; color: white; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
+        .btn-wa-modal:hover { background-color: #1ebe57; color: white; transform: translateY(-2px); box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); 
+        .text-secondary { color: var(--text-secondary) !important; }
+    }
 
         
 
@@ -303,7 +313,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
-            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Tumbler%20Stainless%20Premium" target="_blank" class="btn-wa-modal">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Tumbler%20Stainless%20Premium" target="_blank" rel="noopener noreferrer" class="btn-wa-modal">
                 <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
             </a>
           </div>
@@ -339,7 +349,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
-            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Exclusive%20Gift%20Set%20Premium" target="_blank" class="btn-wa-modal">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Exclusive%20Gift%20Set%20Premium" target="_blank" rel="noopener noreferrer" class="btn-wa-modal">
                 <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
             </a>
           </div>
@@ -375,7 +385,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
-            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Tote%20Bag%20Kanvas%20Estetik" target="_blank" class="btn-wa-modal">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Tote%20Bag%20Kanvas%20Estetik" target="_blank" rel="noopener noreferrer" class="btn-wa-modal">
                 <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
             </a>
           </div>
@@ -411,7 +421,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Tutup</button>
-            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Mug%20Keramik%20Premium" target="_blank" class="btn-wa-modal">
+            <a href="https://wa.me/6281234567890?text=Halo%20Admin,%20saya%20ingin%20tanya%20detail%20mengenai%20produk%20Mug%20Keramik%20Premium" target="_blank" rel="noopener noreferrer" class="btn-wa-modal">
                 <i class="fa-brands fa-whatsapp"></i> Pesan Sekarang
             </a>
           </div>
@@ -556,7 +566,7 @@
         <div class="container text-center">
             <h2 class="fw-bold text-white mb-3">Jadikan Momen Anda Lebih Berkesan!</h2>
             <p class="text-white mb-4 fs-5" style="opacity: 0.9;">Konsultasikan kebutuhan souvenir Anda kepada admin kami secara gratis.</p>
-            <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-light text-primary btn-lg px-5 rounded-pill shadow fw-bold" aria-label="Chat Admin Sekarang di WhatsApp">
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="btn btn-light text-primary btn-lg px-5 rounded-pill shadow fw-bold" aria-label="Chat Admin Sekarang di WhatsApp">
                 <i class="fa-brands fa-whatsapp me-2"></i> Chat Admin Sekarang
             </a>
         </div>
@@ -596,9 +606,9 @@
                     <p class="text-white mb-2" style="opacity: 0.8;"><i class="fa-solid fa-phone me-2"></i> +62 812 3456 7890</p>
                     <p class="text-white mb-4" style="opacity: 0.8;"><i class="fa-solid fa-envelope me-2"></i> cs@abadisouvenir.com</p>
                     <div>
-                        <a href="#" class="text-white me-3 fs-5" style="opacity: 0.8; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" aria-label="Profil Instagram Kami"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#" class="text-white me-3 fs-5" style="opacity: 0.8; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" aria-label="Halaman Facebook Kami"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#" class="text-white fs-5" style="opacity: 0.8; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" aria-label="Akun TikTok Kami"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#" class="text-white me-3 fs-5" style="opacity: 0.8; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" aria-label="Profil Instagram Kami" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="text-white me-3 fs-5" style="opacity: 0.8; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" aria-label="Halaman Facebook Kami" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="text-white fs-5" style="opacity: 0.8; transition: 0.3s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.8'" aria-label="Akun TikTok Kami" rel="noopener noreferrer"><i class="fa-brands fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
@@ -611,10 +621,10 @@
 
     <!-- FLOATING BUTTONS -->
     <div class="floating-container">
-        <div id="btn-top" class="float-btn" onclick="scrollToTop()" role="button" tabindex="0" title="Ke Atas" aria-label="Scroll kembali ke atas">
+        <button id="btn-top" class="float-btn" onclick="scrollToTop()" title="Ke Atas" aria-label="Scroll kembali ke atas">
             <i class="fa-solid fa-chevron-up"></i>
-        </div>
-        <a href="https://wa.me/6281234567890" target="_blank" id="btn-wa" class="float-btn" title="Chat WhatsApp" aria-label="Buka Chat WhatsApp">
+        </button>
+        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" id="btn-wa" class="float-btn" title="Chat WhatsApp" aria-label="Buka Chat WhatsApp">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
@@ -639,10 +649,4 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
 

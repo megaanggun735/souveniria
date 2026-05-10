@@ -17,7 +17,7 @@
     <!-- OpenGraph Lengkap -->
     <meta property="og:title" content="Tentang Kami - Souveniria Premium">
     <meta property="og:description" content="Mengenal lebih dekat Souveniria. Kami adalah penyedia layanan souvenir premium terpercaya untuk setiap momen spesial Anda.">
-    <meta property="og:image" content="https://www.domainanda.com/assets/img/og-image.webp">
+    <meta property="og:image" content="image/logo.webp">
     <meta property="og:url" content="https://www.domainanda.com/about.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Souveniria">
@@ -25,12 +25,12 @@
     <!-- Optimasi PageSpeed: Preconnect CDN -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
-    <link rel="preload" as="image" href="assets/img/about-banner.webp">
+    <link rel="preload" as="image" href="image/heroabout.webp">
     
     <!-- Favicon Maksimal (Multi-size & Apple Touch) -->
-    <link rel="icon" type="image/webp" sizes="32x32" href="assets/img/favicon.webp">
-    <link rel="icon" type="image/webp" sizes="192x192" href="assets/img/favicon.webp">
-    <link rel="apple-touch-icon" href="assets/img/favicon.webp">
+    <link rel="icon" type="image/webp" sizes="32x32" href="image/logo.webp">
+    <link rel="icon" type="image/webp" sizes="192x192" href="image/logo.webp">
+    <link rel="apple-touch-icon" href="image/logo.webp">
 
     <!-- Schema.org JSON-LD untuk AEO (AI Overview) -->
     <script type="application/ld+json">
@@ -40,7 +40,7 @@
       "mainEntity": {
         "@type": "LocalBusiness",
         "name": "Souveniria",
-        "image": "https://www.domainanda.com/assets/img/og-image.webp",
+        "image": "image/logo.webp",
         "url": "https://www.domainanda.com/",
         "telephone": "+6281234567890",
         "address": {
@@ -68,12 +68,18 @@
             --primary-blue: #0d6efd;
             --light-bg: #f8f9fa;
             --wa-green: #25d366;
+            --text-secondary: #555555;
         }
 
         body {
             overflow-x: hidden;
             width: 100%;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #333;
+        }
+
+        html {
+            scroll-behavior: smooth;
         }
 
         /* Navbar Kustom */
@@ -121,12 +127,12 @@
             justify-content: center;
             font-size: 26px;
             color: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             text-decoration: none;
             cursor: pointer;
         }
-        .float-btn:hover { transform: translateY(-5px); color: white; }
+        .float-btn:hover { transform: translateY(-8px); color: white; box-shadow: 0 8px 20px rgba(0,0,0,0.3); }
         #btn-top { background-color: var(--dark-blue); opacity: 0; visibility: hidden; }
         #btn-top.show { opacity: 1; visibility: visible; }
         #btn-wa { background-color: var(--wa-green); }
@@ -159,7 +165,9 @@
             height: 95px; margin: -30px 15px -30px 0; position: relative; z-index: 10;
             
             
-        }
+        
+        .text-secondary { color: var(--text-secondary) !important; }
+    }
 </style>
 </head>
 <body>
@@ -305,7 +313,7 @@
         <div class="container text-center">
             <h2 class="fw-bold text-white mb-3">Siap Mewujudkan Souvenir Impian Anda?</h2>
             <p class="text-white mb-4 fs-5" style="opacity: 0.9;">Diskusikan kebutuhan, desain, dan budget Anda kepada tim kami sekarang juga.</p>
-            <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-light text-primary btn-lg px-5 rounded-pill shadow fw-bold" aria-label="Chat Admin Sekarang di WhatsApp">
+            <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="btn btn-light text-primary btn-lg px-5 rounded-pill shadow fw-bold" aria-label="Chat Admin Sekarang di WhatsApp">
                 <i class="fa-brands fa-whatsapp me-2"></i> Konsultasi Gratis via WA
             </a>
         </div>
@@ -360,10 +368,10 @@
 
     <!-- FLOATING BUTTONS (Urutan dijamin Top di atas WA) -->
     <div class="floating-container">
-        <div id="btn-top" class="float-btn" onclick="scrollToTop()" role="button" tabindex="0" title="Ke Atas" aria-label="Scroll kembali ke atas">
+        <button id="btn-top" class="float-btn" onclick="scrollToTop()" title="Ke Atas" aria-label="Scroll kembali ke atas">
             <i class="fa-solid fa-chevron-up"></i>
-        </div>
-        <a href="https://wa.me/6281234567890" target="_blank" id="btn-wa" class="float-btn" title="Chat WhatsApp" aria-label="Buka Chat WhatsApp">
+        </button>
+        <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" id="btn-wa" class="float-btn" title="Chat WhatsApp" aria-label="Buka Chat WhatsApp">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
     </div>
@@ -388,10 +396,4 @@
     </script>
 </body>
 </html>
-
-
-
-
-
-
 
